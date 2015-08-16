@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Demo</title>
     <link href="demo.css" rel="stylesheet" type="text/css">
-
   </head>
   <body>
-    <div class="carousel" id="gallery">
+    <div class="centerText">
+      <h1> My Aww Collection</h1>
+    </div>
+    <div class="carousel centerBlock" id="gallery">
       <ul>
         <li><img src="images/pic1.jpg"></li>
         <li><img src="images/pic2.jpg"></li>
@@ -16,6 +18,14 @@
         <li><img src="images/pic5.jpg"></li>
       </ul>
     </div>
+    <p class ="centerText">
+      Currently only swipeable on mobile devices.
+      This is due to touchevents and clickevents being different events.
+    </p>
+    <p class ="centerText">
+      Also, currently only implemented for Left and Right swiping.
+      Could implement Up and Down swiping relatively easily.
+    </p>
     <script src="carousel.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
   </body>

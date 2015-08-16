@@ -4,7 +4,6 @@ function onTouch(element, callback) {
   var startX;
   var distX;
   var minHorizontalDistance = 150;
-  var maxVerticalDistance = 100;
 
   var handleTouch = callback || function(event, direction, step, distance){}
 
