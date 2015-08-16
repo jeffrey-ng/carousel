@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test touch</title>
+    <link href="test.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id ="test"></div>
+    <div id ="info"></div>
+  </body>
+
+  <script>
+    window.addEventListener('load', function() {
+      var element = document.getElementById('test');
+      var elementInfo = document.getElementById('info')
+      onTouch(element, function(event, direction, step, distance){
+        var report =''
+
+        report += 'Direction: ' + direction + '<br />'
+         report += 'Step: ' + step + '<br />'
+         report += 'Distance: ' + distance + '<br />'
+         elementInfo.innerHTML = report
+      });
+    }, false);
+  </script>
+  <script src="carousel.js" type="text/javascript"></script>
+</html>
